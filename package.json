@@ -1,0 +1,14 @@
+{
+  "name": "ai-career-path-recommender",
+  "version": "1.0.0",
+  "description": "AI Career Path Recommender - Full Stack MERN with 3D Graphics",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"magenta,cyan\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "test:server": "npm --prefix server test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

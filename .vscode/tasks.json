@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start All (Server + Client)",
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "isBackground": true,
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Start Backend Server",
+      "type": "npm",
+      "script": "dev:server",
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "Start Frontend Client",
+      "type": "npm",
+      "script": "dev:client",
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "Run Backend Tests",
+      "type": "npm",
+      "script": "test:server",
+      "problemMatcher": []
+    }
+  ]
+}
